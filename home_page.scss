@@ -1,0 +1,98 @@
+@import 'mixins';
+
+
+@media screen and (min-width:1000px) {
+    .home_page {
+        @include page_setup;
+        background-color: gray;
+            
+        img {
+            // max-height: 100vh;
+            width: 100vw;
+            height: auto;
+            position: relative;
+            bottom: 25%;
+        }
+
+        .info_box {
+            width:40%;
+            height: auto;
+            position: absolute;
+            left:0;
+            bottom:20%;
+            // right: 20%;
+            background-color:rgba(0, 0, 0, 0.291);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 200;
+
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                color:white;
+                font-size: 40px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                padding-left: 30%;
+            }
+
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-weight: normal;
+                font-size: 35px;
+                padding-left: 30%;
+                padding-top: 10px;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .home_page {
+        // scroll-snap-align: y start;
+        @include page_setup;
+        background-color: rgb(1, 1, 1);
+        height: 100vh;
+        // overflow-y:hidden;
+            
+        img {
+            max-width: 100vw;
+            min-height: 100%;
+        }
+
+        .info_box {
+            width:100%;
+            height: auto;
+            position: absolute;
+            left:0;
+            bottom:15%;
+            background-color:rgba(0, 0, 0, 0.291);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 200;
+
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                color:white;
+                font-size: 40px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                // padding-left: 30%;
+                text-align: center;
+            }
+
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                font-weight: normal;
+                font-size: 35px;
+                // padding-left: 30%;
+                padding-top: 10px;
+                text-align: center;
+
+            }
+        }
+    }
+}

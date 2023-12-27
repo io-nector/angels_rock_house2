@@ -1,0 +1,55 @@
+// use transfrom:scale(1.1) for links
+// use <section class=""> to specify pages
+// box-sizing:border box -- look this up, important concept
+
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+
+@import 'headers';
+@import 'home_page';
+@import 'mixins';
+@import 'menu_page';
+@import 'location_page';
+@import 'reviews_page';
+@import 'about_page';
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    // scroll-snap-points-y: repeat(300px);
+    scroll-snap-type:y proximity;
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        // 4 pages, increase vw if more pages needed
+        width: 500vw;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    body {
+        // 4 pages, increase vw if more pages needed
+        height: 500vw;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
