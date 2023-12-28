@@ -59,38 +59,70 @@
 
 
 @media screen and (max-width:1000px) {
+    
     .location_page {
-        // scroll-snap-align: y start;
-        // @include page_setup;
+        display: none;
+    }
+    
+    .location_page_mobile {
+
         width: 100%;
-        height: auto;
+        height: 100vh;
         background-color: white;
         height: 100vh;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 60% 40%;
-        margin-top: 20vh;
 
+        
+        .back_button {
+            width: 100%;
+            // height: 10%;
+            // height: 5vh;
+            position:sticky;
+            top:0;
+            right: 0px;
+            display: flex;
+            justify-content: end;
+            // padding-right: 10vw;
+            // padding: 5%;
+            background-color: white;
+            border-bottom: solid 2px rgb(72, 72, 72);
+    
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(131, 0, 0);
+                font-size: 18px;
+                justify-self: start;
+            }
+            a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(72, 72, 72);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                // border: solid darkgray 2px;
+                padding: 10px;
+                padding-right: 30px;
+                justify-self: end;
+               
+            }
+    
+    
+        }
         .maps_container {
-            grid-column: 1;
-            grid-row: 1;
             overflow:hidden;
             width:100%;
-            height:100%;
+            height:70vh;
             background-color: blue;
             position: relative;
-            bottom:-10vh;
+            // bottom:-10vh;
             
         }
 
         .contact_us_section {
-            margin-top: 5%;
-            grid-column: 1;
-            grid-row: 2;
+
             width: 100%;
-            height: 100%;
+            height: auto;
             // text-align: center;
-            padding-left: 20%;
+            padding-left: 5%;
             line-height: 2;
 
 

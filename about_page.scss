@@ -41,21 +41,65 @@
 @media screen and (max-width:1000px) {
 
     .about_page {
+        display: none;
+    }
+
+    .about_page_mobile {
         // scroll-snap-align: y start;
         @include page_setup;
         background-color: lightgray;
         height: 100vh;
         width: 100vw;
         position: relative;
-        // overflow-y: hidden;
 
+        overflow-y: hidden;
+
+        .back_button {
+            width: 100%;
+            // height: 10%;
+            // height: 5vh;
+            position:sticky;
+            top:0;
+            right: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5vh;
+            // padding-right: 10vw;
+            // padding: 5%;
+            background-color: white;
+            padding-bottom:20px;
+    
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(72, 72, 72);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                // border: solid darkgray 2px;
+                padding: 10px;
+                padding-right: 30px;
+            }
+            a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(72, 72, 72);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                // border: solid darkgray 2px;
+                padding: 10px;
+                padding-right: 30px;
+                justify-self: end;
+            }
+    
+    
+        }
 
     img {
         position: relative;
         top: 0;
         z-index: 100;
     }
-        p {
+        .content {
             position: absolute;
             top: 20%;
             width: 80%;
