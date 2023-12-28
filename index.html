@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div class="overflow_container">
     <!-- main page -->
         <section class="home_page" id="home_page">
-            <div class="header_setup">
+            <div class="header_setup_desktop">
                 <div class="logo_container">
                     <img src="images/logo-cropped.svg" alt="">
                 </div>
@@ -21,6 +23,27 @@
                     <a href="#location_page">Location</a>
                     <a href="#reviews_page">Reviews</a>
                     <a href="#about_page">About</a>
+                </nav>
+            </div>
+
+            <div class="header_setup_mobile">
+                <div class="logo_container">
+                    <img src="images/logo-cropped.svg" alt="">
+                </div>
+                    
+                <input type="checkbox" id="input1">
+                <label class="hamburger1" for="input1">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </label>
+
+                <nav class="menu1">
+                    <a href="#home_page" class="link1" onclick="uncheckCheckbox()" >Home</a>
+                    <a href="menu.html" class="link1" onclick="uncheckCheckbox()">Menu</a>
+                    <a href="#location_page" class="link1" onclick="uncheckCheckbox()">Location</a>
+                    <a href="#reviews_page" class="link1" onclick="uncheckCheckbox()">Reviews</a>
+                    <a href="#about_page" class="link1" onclick="uncheckCheckbox()">About</a>
                 </nav>
             </div>
 
@@ -40,7 +63,8 @@
             <div class="menu_section">
 
                 <div class="image_container">
-                    <img src="images/Scroll-Down.gif" alt="">
+                    <!-- image set in css to change for mobile -->
+                    <img  alt="">
                 </div>
                 <h1> Appetizers</h1>
                     <h2> Nachos</h2>
@@ -52,7 +76,7 @@
                     <h2>Bean & Cheese Dip</h2>
                     <h2>guacamole</h2>
                     <h2>Sour Cream</h2>
-            
+               
 
                 <h1>A La Carte</h1>
                     <p>Includes your choice of meat (Carnitas, Chile Verde, Chicken, Shredded Beef), Garnished wiht Lettuce, Tomato, Sour Cream, and Guacamole. </p> 
@@ -228,8 +252,19 @@
                 &emsp; &emsp;~ restaurantguru.com</p><br>
         </div>
 
-
-
+    </div>
+    <script>
+        function uncheckCheckbox() {
+            // Get the checkbox element by its id
+            var checkbox = document.getElementById('input1');
+    
+            // Check if the checkbox is currently checked
+            if (checkbox.checked) {
+                // If checked, uncheck it
+                checkbox.checked = false;
+            }
+        }
+    </script>
 </body>
 </html>
 
