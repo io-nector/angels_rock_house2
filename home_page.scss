@@ -52,13 +52,13 @@
 @media screen and (max-width:1000px) {
     .home_page {
         background-color: rgb(1, 1, 1);
-        height: 100vw;
+        height: 100vh;
         // margin-top: 10vh;      
         position: relative; 
+        overflow-y: hidden;
 
-        img {
-            position: absolute;
-            bottom:0;
+        +img {
+            position: relative;
             width: auto;
             height: 100%;
             z-index: 100;

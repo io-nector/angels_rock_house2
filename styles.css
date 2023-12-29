@@ -183,12 +183,12 @@
 @media screen and (max-width: 1000px) {
   .home_page {
     background-color: rgb(1, 1, 1);
-    height: 100vw;
+    height: 100vh;
     position: relative;
+    overflow-y: hidden;
   }
-  .home_page img {
-    position: absolute;
-    bottom: 0;
+  .home_page + img {
+    position: relative;
     width: auto;
     height: 100%;
     z-index: 100;
@@ -826,9 +826,6 @@
 
 html {
   height: 100vh;
-  scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y proximity;
 }
 
 @media screen and (min-width: 1000px) {
