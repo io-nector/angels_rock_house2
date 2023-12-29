@@ -45,52 +45,49 @@
     }
 
     .about_page_mobile {
-        // scroll-snap-align: y start;
         @include page_setup;
+
         background-color: lightgray;
         height: 100vh;
         width: 100vw;
         position: relative;
-
         overflow-y: hidden;
 
         .back_button {
             width: 100%;
-            // height: 10%;
-            // height: 5vh;
             position:sticky;
             top:0;
             right: 0px;
+            padding-bottom:20px;
+
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 5vh;
-            // padding-right: 10vw;
-            // padding: 5%;
+
             background-color: white;
-            padding-bottom:20px;
     
             p {
-                font-family: Arial, Helvetica, sans-serif;
-                color: rgb(72, 72, 72);
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: bold;
-                // border: solid darkgray 2px;
                 padding: 10px;
                 padding-right: 30px;
-                white-space: nowrap;
+                white-space: nowrap;//phone number wraps without this
 
-            }
-            a {
                 font-family: Arial, Helvetica, sans-serif;
                 color: rgb(72, 72, 72);
                 text-decoration: none;
                 font-size: 18px;
                 font-weight: bold;
-                // border: solid darkgray 2px;
+            }
+            a {
                 padding: 10px;
                 padding-right: 30px;
                 justify-self: end;
+
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(72, 72, 72);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+
             }
     
     
@@ -102,16 +99,18 @@
         z-index: 100;
     }
         .content {
-            position: absolute;
-            top: 20%;
             width: 80%;
             height: auto;
+            position: absolute;
+            top: 20%;
+            margin-left: 10%;
+            margin-right: 10%;
+
             background-color: rgba(255, 255, 255, 0.446);
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
             border-radius: 5%;
-            margin-left: 10%;
-            margin-right: 10%;
+    
             font-family: Arial, Helvetica, sans-serif;
             color:  rgb(72, 72, 72);
             padding: 5%;
@@ -119,7 +118,7 @@
             font-size: 20px;
             line-height: 1.5;
             text-align: center;
-            // width: 50%;
+
             z-index: 175;
             
         }
