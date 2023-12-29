@@ -779,6 +779,7 @@
     width: 100vw;
     position: relative;
     overflow-y: hidden;
+    overflow-x: hidden;
   }
   .about_page_mobile .back_button {
     width: 100%;
