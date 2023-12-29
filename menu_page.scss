@@ -203,12 +203,14 @@ $font_color:rgb(101, 67, 33);
         // padding-right: 10vw;
         // padding: 5%;
         background-color: white;
+        z-index: 200;
 
         p {
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(131, 0, 0);
             font-size: 18px;
             justify-self: start;
+            white-space: nowrap;
         }
         a {
             font-family: Arial, Helvetica, sans-serif;
