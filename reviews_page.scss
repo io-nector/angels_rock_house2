@@ -13,6 +13,11 @@
         gap:10px;
 
         background-color: rgb(255, 255, 255);
+        background-image: url('images/limes.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
         
         .yelp_reviews {
             grid-column: 1;
@@ -49,7 +54,12 @@
 
     .reviews_page_mobile {
         height: 100vh;
-        background-color: rgb(252, 252, 252);
+
+        background-color: rgb(255, 255, 255);
+        background-image: url('images/limes.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         
         .back_button {
             width: 100%;
