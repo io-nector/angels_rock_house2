@@ -184,13 +184,13 @@
   .home_page {
     background-color: rgb(1, 1, 1);
     height: 100vh;
-    position: relative;
-    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
   }
   .home_page + img {
     position: relative;
     width: auto;
-    height: 100%;
+    height: 90vh;
     z-index: 100;
   }
   .home_page .info_box {
@@ -198,7 +198,7 @@
     height: auto;
     position: absolute;
     left: 0;
-    bottom: 20%;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.291);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
